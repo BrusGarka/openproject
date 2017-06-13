@@ -241,9 +241,9 @@ gem 'reform-rails', '~> 0.1.7'
 gem 'roar', '~> 1.1.0'
 
 platforms :mri, :mingw, :x64_mingw do
-  group :mysql2 do
-    gem 'mysql2', '~> 0.4.4'
-  end
+  # group :mysql2 do
+  #   gem 'mysql2', '~> 0.4.4'
+  # end
 
   group :postgres do
     gem 'pg', '~> 0.20.0'
@@ -273,7 +273,7 @@ group :docker do
   gem 'passenger'
 
   # Used to easily precompile assets
-  gem 'sqlite3', require: false
+  # gem 'sqlite3', require: false
   gem 'rails_12factor', require: !!ENV['HEROKU']
   gem 'health_check', require: !!ENV['HEROKU']
   gem 'newrelic_rpm', require: !!ENV['HEROKU']
